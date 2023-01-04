@@ -2,8 +2,8 @@ class tom {
     constructor(Name){
         this.TomName = Name
     }
-
 }
+
 
 
 const T = new tom("Abhi")
