@@ -10,5 +10,8 @@ while (i > 10) {
 }
 
 
+
+
+
 var arr = [1,2,33,4 ,55,6677 ]
 arr.forEach((i) => console.log(`number is ${i}`))
