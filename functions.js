@@ -1,3 +1,16 @@
+// NESTED functions
+
+function O() {
+    console.log("First level function");
+    S()
+    function S() {
+        console.log("Nested functions");
+    }
+}
+
+O()
+
+
 
 // Normal functions
 console.log(F === undefined);
