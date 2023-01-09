@@ -1,5 +1,13 @@
 // // Functions which maintain their execution context are closures
 
+
+function showTime() {
+    let dateTime= new Date();
+    let time = dateTime.toLocaleString();
+    console.log(time)
+}
+setTimeout(showTime, 3000);
+
 // for (let i = 1; i < 10; i++) {
 //     function N(i) {
 //         setTimeout(function () {
