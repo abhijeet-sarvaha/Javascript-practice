@@ -15,19 +15,29 @@ users = [
 // })
 // console.log(ch2);
 
-const ch3 = users.reduce(function (acc, curr) {
-    if (acc[`${curr['age']}`] === undefined)  {
-        acc[`${curr['age']}`] = 1
-        return acc
-    }
-    else{
-        acc[`${curr['age']}`] += 1
-        return acc
-    }
-}, {})
+// const ch3 = users.reduce(function (acc, curr) {
+//     if (acc[`${curr['age']}`] === undefined)  {
+//         acc[`${curr['age']}`] = 1
+//         return acc
+//     }
+//     else{
+//         acc[`${curr['age']}`] += 1
+//         return acc
+//     }
+// }, {})
 
 
-console.log(ch3);
+// console.log(ch3);
+
+
+const ch4 = users.reduce(function (acc, curr) {
+    if (!acc.includes(curr['name'])) {
+        acc.push(curr['name'])
+    }
+    return acc
+}, [])
+
+console.log(ch4);
 
 // const arr = [15, 2, 3, 4, 5, 6, 7, 8]
 
