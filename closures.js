@@ -1,12 +1,14 @@
 // // Functions which maintain their execution context are closures
 
 
-function showTime() {
-    let dateTime= new Date();
-    let time = dateTime.toLocaleString();
-    console.log(time)
-}
-setTimeout(showTime, 3000);
+
+
+// function showTime() {
+//     let dateTime= new Date();
+//     let time = dateTime.toLocaleString();
+//     console.log(time)
+// }
+// setTimeout(showTime, 3000);
 
 // for (let i = 1; i < 10; i++) {
 //     function N(i) {
@@ -27,7 +29,12 @@ setTimeout(showTime, 3000);
 // }
 
 
+// // parameters to setTimeout
+// function greet(name, lastName) {
+//     console.log(`Hello ${name} ${lastName}`);
+// }
 
+// setTimeout(greet, 1000, 'Abhijeet', 'Mamidwar');
 
 
 // function X() {
